@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我 · 唐楚杰</title>
+    <meta name="description" content="联系唐楚杰 —— 邮箱 3784248168@qq.com，电话 18825676973，坐标广东揭阳。">
+    <link rel="stylesheet" href="s1.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('tc-theme');
+                if (t === 'night') document.documentElement.classList.add('night');
+            } catch (e) { }
+        })();
+    </script>
+</head>
+<body class="page">
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <a class="brand" href="index.html">
+            <span class="brand-seal">唐</span>
+            <span class="brand-text">唐楚杰<small>TANG&nbsp;CHUJIE</small></span>
+        </a>
+        <nav class="site-nav" aria-label="页面导航">
+            <a href="index.html">首页</a>
+            <a href="about.html">关于</a>
+            <a href="hometown.html">家乡</a>
+            <a href="experience.html">经历</a>
+            <a href="lab.html">实验</a>
+            <a href="contact.html" class="active">联系</a>
+        </nav>
+        <div class="site-meta">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span id="clock">--:--:--</span>
+            <span class="meta-loc">广东 · 揭阳</span>
+            <button type="button" class="icon-btn" id="theme-toggle" aria-label="切换昼夜主题" title="切换昼夜主题">
+                <span class="icon-sun" aria-hidden="true">☀</span>
+                <span class="icon-moon" aria-hidden="true">☾</span>
+            </button>
+            <button type="button" class="icon-btn" id="print-btn" aria-label="打印 / 导出 PDF" title="打印 / 导出 PDF">⎙</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ 子页横幅 ============ -->
+        <section class="page-hero">
+            <span class="page-hero-watermark" aria-hidden="true">信</span>
+            <div class="container">
+                <nav class="breadcrumb" aria-label="面包屑">
+                    <a href="index.html">首页</a>
+                    <span class="bc-sep">/</span>
+                    <span class="bc-current">联系</span>
+                </nav>
+                <h1 class="page-hero-title reveal">联系我</h1>
+                <p class="page-hero-sub reveal" style="--d:.1s">GET IN TOUCH · 05</p>
+                <p class="page-hero-lede reveal" style="--d:.2s">欢迎来信，交流竞赛经验或项目合作。看到邮件都会回。</p>
+            </div>
+        </section>
+
+        <!-- ============ 联系 ============ -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="bento">
+                    <a class="b-card b-email reveal" href="mailto:3784248168@qq.com">
+                        <span class="b-label">EMAIL</span>
+                        <span class="b-value">3784248168@qq.com</span>
+                        <span class="b-arrow" aria-hidden="true">→</span>
+                    </a>
+                    <a class="b-card b-phone reveal" style="--d:.08s" href="tel:+8618825676973">
+                        <span class="b-label">PHONE</span>
+                        <span class="b-value">188 2567 6973</span>
+                        <span class="b-arrow" aria-hidden="true">→</span>
+                    </a>
+                    <div class="b-card b-loc reveal">
+                        <span class="b-label">BASED&nbsp;IN</span>
+                        <span class="b-value">广东 · 揭阳</span>
+                        <p class="b-sub">籍贯与居住地</p>
+                    </div>
+                    <div class="b-card b-cta reveal" style="--d:.08s">
+                        <p>欢迎来信，交流竞赛经验或项目合作。</p>
+                        <div class="b-cta-actions">
+                            <a class="btn btn-light" href="mailto:3784248168@qq.com">发送邮件</a>
+                            <button type="button" class="btn btn-outline-light" id="copy-email" data-email="3784248168@qq.com">复制邮箱</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 回看 ============ -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="hub-head reveal">
+                    <h2>回看</h2>
+                    <span>BACK</span>
+                </div>
+                <div class="hub-grid hub-grid-2">
+                    <a class="hub-card hub-lab reveal" style="--d:.05s" href="lab.html" data-num="04">
+                        <div class="hub-top">
+                            <span class="hub-index">04</span>
+                            <span class="hub-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div>
+                            <h3 class="hub-title">JS 小实验<small>JAVASCRIPT LAB</small></h3>
+                            <p class="hub-desc">亲手写下每一行，还能触发页面跳转。</p>
+                        </div>
+                    </a>
+                    <a class="hub-card hub-about reveal" style="--d:.12s" href="about.html" data-num="01">
+                        <div class="hub-top">
+                            <span class="hub-index">01</span>
+                            <span class="hub-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div>
+                            <h3 class="hub-title">关于我<small>PROFILE</small></h3>
+                            <p class="hub-desc">拆清楚问题、做扎实动手。课余爬山、下棋。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-mark" aria-hidden="true">唐楚杰</div>
+        <div class="footer-bar">
+            <span>© <span id="year">2026</span> 唐楚杰</span>
+            <span class="footer-loc">广东揭阳 · JIEYANG, GUANGDONG</span>
+            <a href="index.html">回到首页 ↑</a>
+        </div>
+    </footer>
+
+    <button type="button" class="to-top" id="to-top" aria-label="回到顶部" title="回到顶部">↑</button>
+
+    <script src="j1.js"></script>
+</body>
+</html>

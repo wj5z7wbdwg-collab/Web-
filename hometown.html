@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>家乡 · 揭阳 · 唐楚杰</title>
+    <meta name="description" content="唐楚杰的家乡 —— 广东揭阳，榕城。工夫茶、黄岐山、进贤门、粿、英歌。">
+    <link rel="stylesheet" href="s1.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('tc-theme');
+                if (t === 'night') document.documentElement.classList.add('night');
+            } catch (e) { }
+        })();
+    </script>
+</head>
+<body class="page">
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <a class="brand" href="index.html">
+            <span class="brand-seal">唐</span>
+            <span class="brand-text">唐楚杰<small>TANG&nbsp;CHUJIE</small></span>
+        </a>
+        <nav class="site-nav" aria-label="页面导航">
+            <a href="index.html">首页</a>
+            <a href="about.html">关于</a>
+            <a href="hometown.html" class="active">家乡</a>
+            <a href="experience.html">经历</a>
+            <a href="lab.html">实验</a>
+            <a href="contact.html">联系</a>
+        </nav>
+        <div class="site-meta">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span id="clock">--:--:--</span>
+            <span class="meta-loc">广东 · 揭阳</span>
+            <button type="button" class="icon-btn" id="theme-toggle" aria-label="切换昼夜主题" title="切换昼夜主题">
+                <span class="icon-sun" aria-hidden="true">☀</span>
+                <span class="icon-moon" aria-hidden="true">☾</span>
+            </button>
+            <button type="button" class="icon-btn" id="print-btn" aria-label="打印 / 导出 PDF" title="打印 / 导出 PDF">⎙</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ 子页横幅 ============ -->
+        <section class="page-hero">
+            <span class="page-hero-watermark" aria-hidden="true">榕</span>
+            <div class="container">
+                <nav class="breadcrumb" aria-label="面包屑">
+                    <a href="index.html">首页</a>
+                    <span class="bc-sep">/</span>
+                    <span class="bc-current">家乡</span>
+                </nav>
+                <h1 class="page-hero-title reveal">家乡 · 揭阳</h1>
+                <p class="page-hero-sub reveal" style="--d:.1s">HOMETOWN · JIEYANG · 02</p>
+                <p class="page-hero-lede reveal" style="--d:.2s">老城叫榕城，榕江绕着城走。这座城的日子，是从一泡工夫茶开始的。</p>
+            </div>
+        </section>
+
+        <!-- ============ 家乡 ============ -->
+        <section class="section hometown" id="hometown">
+            <div class="container">
+                <span class="hometown-watermark" aria-hidden="true">榕</span>
+                <div class="hometown-grid">
+                    <div class="hometown-lede reveal">
+                        <p>
+                            我家在广东<a class="inline-link" href="https://baike.baidu.com/item/%E6%8F%AD%E9%98%B3%E5%B8%82" target="_blank" rel="noopener">揭阳</a>，老城叫榕城，榕江绕着城走，老辈人说这座城像一朵"水上莲花"。揭阳的日子，是从一泡<a class="inline-link" href="https://baike.baidu.com/item/%E5%B7%A5%E5%A4%AB%E8%8C%B6" target="_blank" rel="noopener">工夫茶</a>开始的——不管谁来家里，第一件事都是先烧水。
+                        </p>
+                        <p>
+                            周末没事就往黄岐山走走，从山脚到山顶，刚好一泡茶的时间。所谓"爬山"这个爱好，其实是在家乡练出来的。
+                        </p>
+                        <p class="hometown-more">
+                            想了解这座城市：
+                            <a class="inline-link" href="http://www.jieyang.gov.cn/" target="_blank" rel="noopener">揭阳市人民政府</a> ·
+                            <a class="inline-link" href="https://baike.baidu.com/item/%E8%BF%9B%E8%B4%A4%E9%97%A8" target="_blank" rel="noopener">进贤门</a> ·
+                            <a class="inline-link" href="https://baike.baidu.com/item/%E6%8F%AD%E9%98%B3%E5%AD%A6%E5%AE%AB" target="_blank" rel="noopener">揭阳学宫</a>
+                        </p>
+                    </div>
+                    <dl class="glossary reveal" style="--d:.15s">
+                        <div><dt><a class="inline-link" href="https://baike.baidu.com/item/%E5%B7%A5%E5%A4%AB%E8%8C%B6" target="_blank" rel="noopener">工夫茶</a></dt><dd>家里来了人先烧水，三只小杯轮着烫。我泡得一般，烫杯的动作倒是很熟练。</dd></div>
+                        <div><dt><a class="inline-link" href="https://baike.baidu.com/item/%E9%BB%84%E5%B2%90%E5%B1%B1" target="_blank" rel="noopener">黄岐山</a></dt><dd>市区北面的山，山顶能看到整个榕城。"爬山"大多发生在这里。</dd></div>
+                        <div><dt><a class="inline-link" href="https://baike.baidu.com/item/%E8%BF%9B%E8%B4%A4%E9%97%A8" target="_blank" rel="noopener">进贤门</a></dt><dd>明代留下来的城门，如今站在马路中间，公交车报站都会念到它。</dd></div>
+                        <div><dt><a class="inline-link" href="https://baike.baidu.com/item/%E7%B2%BF" target="_blank" rel="noopener">粿</a></dt><dd>米浆做的一切：红桃粿、乒乓粿、粿条汤。逢年过节，家里的蒸锅就没停过。</dd></div>
+                        <div><dt><a class="inline-link" href="https://baike.baidu.com/item/%E8%8B%B1%E6%AD%8C" target="_blank" rel="noopener">英歌</a></dt><dd>过年游神才登场，几十人画着脸、敲着双槌从街头打到街尾，鼓声隔两条街都听得见。</dd></div>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 下一页 ============ -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="hub-head reveal">
+                    <h2>下一页</h2>
+                    <span>NEXT</span>
+                </div>
+                <div class="hub-grid hub-grid-2">
+                    <a class="hub-card hub-exp reveal" style="--d:.05s" href="experience.html" data-num="03">
+                        <div class="hub-top">
+                            <span class="hub-index">03</span>
+                            <span class="hub-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div>
+                            <h3 class="hub-title">经历 · 项目 · 竞赛<small>EXPERIENCE</small></h3>
+                            <p class="hub-desc">教育、磁芯检测项目与 5 项竞赛成绩。</p>
+                        </div>
+                    </a>
+                    <a class="hub-card hub-lab reveal" style="--d:.12s" href="lab.html" data-num="04">
+                        <div class="hub-top">
+                            <span class="hub-index">04</span>
+                            <span class="hub-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div>
+                            <h3 class="hub-title">JS 小实验<small>JAVASCRIPT LAB</small></h3>
+                            <p class="hub-desc">亲手写下每一行，还能触发页面跳转。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-mark" aria-hidden="true">唐楚杰</div>
+        <div class="footer-bar">
+            <span>© <span id="year">2026</span> 唐楚杰</span>
+            <span class="footer-loc">广东揭阳 · JIEYANG, GUANGDONG</span>
+            <a href="index.html">回到首页 ↑</a>
+        </div>
+    </footer>
+
+    <button type="button" class="to-top" id="to-top" aria-label="回到顶部" title="回到顶部">↑</button>
+
+    <script src="j1.js"></script>
+</body>
+</html>

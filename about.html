@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 · 唐楚杰</title>
+    <meta name="description" content="关于唐楚杰 —— 习惯先把问题拆清楚、再动手做扎实；课余爬山、下棋。">
+    <link rel="stylesheet" href="s1.css">
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem('tc-theme');
+                if (t === 'night') document.documentElement.classList.add('night');
+            } catch (e) { }
+        })();
+    </script>
+</head>
+<body class="page">
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+        <a class="brand" href="index.html">
+            <span class="brand-seal">唐</span>
+            <span class="brand-text">唐楚杰<small>TANG&nbsp;CHUJIE</small></span>
+        </a>
+        <nav class="site-nav" aria-label="页面导航">
+            <a href="index.html">首页</a>
+            <a href="about.html" class="active">关于</a>
+            <a href="hometown.html">家乡</a>
+            <a href="experience.html">经历</a>
+            <a href="lab.html">实验</a>
+            <a href="contact.html">联系</a>
+        </nav>
+        <div class="site-meta">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span id="clock">--:--:--</span>
+            <span class="meta-loc">广东 · 揭阳</span>
+            <button type="button" class="icon-btn" id="theme-toggle" aria-label="切换昼夜主题" title="切换昼夜主题">
+                <span class="icon-sun" aria-hidden="true">☀</span>
+                <span class="icon-moon" aria-hidden="true">☾</span>
+            </button>
+            <button type="button" class="icon-btn" id="print-btn" aria-label="打印 / 导出 PDF" title="打印 / 导出 PDF">⎙</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- ============ 子页横幅 ============ -->
+        <section class="page-hero">
+            <span class="page-hero-watermark" aria-hidden="true">我</span>
+            <div class="container">
+                <nav class="breadcrumb" aria-label="面包屑">
+                    <a href="index.html">首页</a>
+                    <span class="bc-sep">/</span>
+                    <span class="bc-current">关于</span>
+                </nav>
+                <h1 class="page-hero-title reveal">关于我</h1>
+                <p class="page-hero-sub reveal" style="--d:.1s">PROFILE · 01</p>
+                <p class="page-hero-lede reveal" style="--d:.2s">先把问题拆清楚，再动手做扎实。赛场练技术，生活留一口气。</p>
+            </div>
+        </section>
+
+        <!-- ============ 关于 ============ -->
+        <section class="section" id="profile">
+            <div class="container">
+                <div class="profile-grid">
+                    <p class="profile-lede reveal">
+                        广东揭阳人，现就读于广东科学技术职业学院。习惯先把问题拆清楚、再动手做扎实——数据挖掘、智能汽车、软件设计、数学建模，一路从赛场练过来；课余则用爬山和下棋给生活留一口气：一步一步向上走，落子之前先推演。
+                    </p>
+                    <div class="interests">
+                        <div class="interest-card reveal" style="--d:.1s">
+                            <span class="interest-num">壹</span>
+                            <h3>爬山</h3>
+                            <p>一步一步把路走通。常爬的是市区的黄岐山。</p>
+                        </div>
+                        <div class="interest-card reveal" style="--d:.2s">
+                            <span class="interest-num">贰</span>
+                            <h3>下棋</h3>
+                            <p>喜欢落子前的推演与权衡。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ 下一页 ============ -->
+        <section class="section section-alt">
+            <div class="container">
+                <div class="hub-head reveal">
+                    <h2>下一页</h2>
+                    <span>NEXT</span>
+                </div>
+                <div class="hub-grid hub-grid-2">
+                    <a class="hub-card hub-home reveal" style="--d:.05s" href="hometown.html" data-num="02">
+                        <div class="hub-top">
+                            <span class="hub-index">02</span>
+                            <span class="hub-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div>
+                            <h3 class="hub-title">家乡 · 揭阳<small>HOMETOWN · JIEYANG</small></h3>
+                            <p class="hub-desc">老城叫榕城，日子从一泡工夫茶开始。</p>
+                        </div>
+                    </a>
+                    <a class="hub-card hub-exp reveal" style="--d:.12s" href="experience.html" data-num="03">
+                        <div class="hub-top">
+                            <span class="hub-index">03</span>
+                            <span class="hub-arrow" aria-hidden="true">→</span>
+                        </div>
+                        <div>
+                            <h3 class="hub-title">经历 · 项目 · 竞赛<small>EXPERIENCE</small></h3>
+                            <p class="hub-desc">教育、磁芯检测项目与 5 项竞赛成绩。</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-mark" aria-hidden="true">唐楚杰</div>
+        <div class="footer-bar">
+            <span>© <span id="year">2026</span> 唐楚杰</span>
+            <span class="footer-loc">广东揭阳 · JIEYANG, GUANGDONG</span>
+            <a href="index.html">回到首页 ↑</a>
+        </div>
+    </footer>
+
+    <button type="button" class="to-top" id="to-top" aria-label="回到顶部" title="回到顶部">↑</button>
+
+    <script src="j1.js"></script>
+</body>
+</html>
